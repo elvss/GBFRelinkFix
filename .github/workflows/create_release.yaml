@@ -34,7 +34,6 @@ jobs:
     - run: 7z a -tzip ${{ github.event.repository.name }}_${{ github.event.inputs.version }}.zip README.md EXTRACT_TO_GAME_FOLDER ${{ github.event.repository.name }}.ini ${{ github.event.repository.name }}.asi dinput8.dll UltimateASILoader_LICENSE.md
     
       name: Create artifact
-      run: |
         cd output
         tar -cvzf result.tar.gz result.txt
         mv result.txt result.deb
