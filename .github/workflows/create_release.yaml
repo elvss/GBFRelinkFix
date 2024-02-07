@@ -16,7 +16,8 @@ jobs:
     - uses: actions/checkout@v4
       with:
         submodules: 'true'
-    
+        
+        Set-Location: D:\a\GBFRelinkFix\GBFRelinkFix\output
     - name: Create artifact
       run: |
         cd output
