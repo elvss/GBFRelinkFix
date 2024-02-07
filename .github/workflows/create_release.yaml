@@ -17,14 +17,7 @@ jobs:
       with:
         submodules: 'true'
         
-        Set-Location: D:\a\GBFRelinkFix\GBFRelinkFix\output
-    - name: Create artifact
-      run: |
-        cd output
-        tar -cvzf result.tar.gz result.txt
-        mv result.txt result.deb
-      if: always()
-      
+
     - name: setup-msbuild
       uses: microsoft/setup-msbuild@v1.1
       
@@ -45,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
          name: my-artifact
-         path: output/output/result.tar.gz
+         path: output/result.tar.gz
