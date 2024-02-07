@@ -32,8 +32,4 @@ jobs:
     - run: C:\msys64\usr\bin\wget.exe -O .\UltimateASILoader_LICENSE.md https://raw.githubusercontent.com/ThirteenAG/Ultimate-ASI-Loader/master/license 
     - run: New-Item -Path ".\EXTRACT_TO_GAME_FOLDER" -ItemType File
     - run: 7z a -tzip ${{ github.event.repository.name }}_${{ github.event.inputs.version }}.zip README.md EXTRACT_TO_GAME_FOLDER ${{ github.event.repository.name }}.ini ${{ github.event.repository.name }}.asi dinput8.dll UltimateASILoader_LICENSE.md
-    name: upload artifact
-    uses: actions/upload-artifact@v4
-    with:
-      name: my-artifact
-        path: path/to/artifact/
+    
