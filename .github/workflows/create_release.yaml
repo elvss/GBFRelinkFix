@@ -33,14 +33,8 @@ jobs:
     - run: New-Item -Path ".\EXTRACT_TO_GAME_FOLDER" -ItemType File
     - run: 7z a -tzip ${{ github.event.repository.name }}_${{ github.event.inputs.version }}.zip README.md EXTRACT_TO_GAME_FOLDER ${{ github.event.repository.name }}.ini ${{ github.event.repository.name }}.asi dinput8.dll UltimateASILoader_LICENSE.md
     
-      name: Create artifact
-        cd output
-        tar -cvzf result.tar.gz result.txt
-        mv result.txt result.deb
-      if: always()
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: result-artifact
-        path: output/result.tar.gz
+ name: upload artifact
+ uses: actions/upload-artifact@v4
+ with:
+    name: my-artifact
+     path: path/to/artifact/
