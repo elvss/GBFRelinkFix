@@ -7,11 +7,12 @@ This is a fix that adds custom resolutions, ultrawide support and more to Granbl
 ## Features
 - Custom resolution/ultrawide support.
 - Correct FOV and aspect ratio at any resolution.
-- Gameplay FOV modification.
+- Gameplay FOV/camera distance modification.
 - Scales HUD to 16:9.
-- Experimental option to span the HUD. (Check ini to enable)
-- Experimental option to span HUD backgrounds e.g. screen fades, menu backgrounds etc. (Check ini to enable)
-- Experiental option to raise FPS cap to 240. (Check ini to enable)
+- Spanned HUD backgrounds to fill screen (loading fades etc).
+- Option to span gameplay HUD to edges of the screen. (Check ini to enable)
+- Graphical tweaks (Shadow Quality/LOD Distance/Disable TAA).
+- Experimental option to raise FPS cap to 240. (Check ini to enable)
 
 ## Installation
 - Grab the latest release of GBFRelinkFix from [here.](https://github.com/Lyall/GBFRelinkFix/releases)
@@ -28,8 +29,6 @@ This is a fix that adds custom resolutions, ultrawide support and more to Granbl
 Please report any issues you see.
 This list will contain bugs which may or may not be fixed.
 
-- Spanned HUD option does not span everything and can look rather buggy.
-- Spanned backgrounds option may result in visual bugs.
 - Raising FPS cap can cause issues with physics. [#2](https://github.com/Lyall/GBFRelinkFix/issues/2)
   
 ## Screenshots
